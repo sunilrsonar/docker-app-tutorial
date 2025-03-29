@@ -5,8 +5,8 @@ app = Flask(__name__)
 CORS(app)
 
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def index():
+    return "Welcome to the Flask API!"
 
 @app.route('/process', methods=['POST'])
 def process_data():
